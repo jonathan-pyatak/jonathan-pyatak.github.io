@@ -1,0 +1,31 @@
+h1{
+    color: red;
+    text-align: center;
+}
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+#employee label{
+    display: inline-block;
+    width: 15%;
+}
+
+input, select{
+    border: 1px solid black;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}

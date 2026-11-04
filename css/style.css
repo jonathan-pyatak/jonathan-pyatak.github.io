@@ -1,0 +1,194 @@
+:root {
+    --navy: #243447;
+    --blue: #315b80;
+    --light: #f4f6f8;
+    --white: #ffffff;
+    --text: #263443;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light);
+    color: var(--text);
+}
+
+header {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 5px;
+    text-align: center;
+}
+
+header h2 {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+nav img {
+    width: 32px;
+    height: 32px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--blue);
+    border-radius: 4px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+main div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+}
+
+#learning{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3; 
+}
+
+#learning h3{
+    text-align: center;
+}
+
+#image{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2; 
+    background-color: var(--light);
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+#education{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2; 
+}
+
+#contact-info{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3; 
+    text-align: center;
+}
+
+#contact-info ul{
+    list-style: none;
+}
+
+#html-projects{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: var(--light);
+    border-radius: 0px;
+    box-shadow: none;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+#python-projects{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: var(--light);
+    border-radius: 0px;
+    box-shadow: none;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+#python-projects h5{
+    margin-top: -20px;
+}
+
+h2, h3{ 
+    color: var(--navy);
+}
+
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 15px auto;
+}
+
+h2 {
+    color: #243447;
+}
+
+a {
+    overflow-wrap: anywhere;
+}
+
+footer {
+    background-color: var(--navy);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer a {
+    color: #b9dcff;
+}
+
+/* Tablet and desktop layouts */
+@media (min-width: 600px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    main div {
+        padding: 30px;
+    }
+}

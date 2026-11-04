@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
+  </head>
+  <body>
+    <h1>Employee Survey</h1>
+    <main>
+      <form action="https://www.w3schools.com/action_page.php" method="post">
+        <fieldset id="employee">
+          <legend>Employee Information</legend>
+          <div>
+            <label for="name">Full Name</label>
+            <input type="text" name="fullname" id="name" />
+          </div>
+          <div>
+            <label for="ID">ID</label>
+            <input type="password" name="id" id="id" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@something.com"
+              aria-label="Email"
+            />
+          </div>
+          <div>
+            <label for="location">Location</label>
+            <select name="location" id="location">
+              <option value="None" selected disabled hidden>
+                Please Select
+              </option>
+              <option value="Albia">Albia</option>
+              <option value="Chariton">Chariton</option>
+              <option value="Melrose">Melrose</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Department</legend>
+          <div>
+            <input
+              type="radio"
+              name="enviroment"
+              id="frontEnd"
+              value="1"
+              checked
+            />
+            <label for="frontEnd">backEnd</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="enviroment"
+              id="backEnd"
+              value="2"
+              checked
+            />
+            <label for="backEnd">backEnd</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Languages</legend>
+          <div>
+            <input type="checkbox" name="html" id="html" value="YES" checked />
+            <label for="html">HTML</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="html"
+              id="python"
+              value="YES"
+              checked
+            />
+            <label for="python">Python</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="javascript"
+              id="html"
+              value="YES"
+              checked
+            />
+            <label for="javascript">JavaScript</label>
+          </div>
+        </fieldset>
+        <input type="submit" value="Next" />
+      </form>
+    </main>
+  </body>
+</html>

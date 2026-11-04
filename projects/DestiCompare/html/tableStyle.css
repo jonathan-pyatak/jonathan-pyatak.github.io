@@ -1,0 +1,28 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption{
+    font-size: 1.5em;
+}
+
+th,
+td{
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+th{
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+td.emoji{
+    font-size: 1.5em;
+}
+
+.country{
+    font-weight: bold;
+}
